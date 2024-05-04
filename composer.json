@@ -1,0 +1,35 @@
+{
+    "name": "laravel-min-ext/auth-attempts",
+    "description": "Add captcha and login attempts for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "auth-attempts"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tungnt",
+            "email": "tungnt.code@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "tungnt/laravel-admin": "*@dev",
+        "mews/captcha": "^3.2.5",
+        "laravel/ui": "^4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tungnt\\AuthAttempts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tungnt\\AuthAttempts\\AuthAttemptsServiceProvider"
+            ]
+
+        }
+    }
+}
